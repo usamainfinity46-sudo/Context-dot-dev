@@ -1,0 +1,44 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/apps/server/src/index.js",
+    "test": "tsx --test test/unit.test.ts",
+    "test:integration": "tsx --test test/integration.test.ts",
+    "test:ui": "tsx --test test/ui.test.ts"
+  },
+  "dependencies": {
+    "@context/shared": "workspace:*",
+    "@mozilla/readability": "^0.6.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "archiver": "^7.0.1",
+    "better-sqlite3": "^12.6.2",
+    "cheerio": "^1.1.2",
+    "crawlee": "^3.15.3",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "ipaddr.js": "^2.3.0",
+    "jsdom": "^26.1.0",
+    "playwright": "1.58.2",
+    "robots-parser": "^3.0.1",
+    "turndown": "^7.2.2",
+    "undici": "^7.20.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.3",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/express": "^5.0.6",
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^22.19.7",
+    "@types/turndown": "^5.0.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
